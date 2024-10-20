@@ -1,0 +1,130 @@
+  adding: index.mjs (deflated 78%)
+
+
+=========== Creating/Updating Lambda Function ===========
+
+usage: aws [options] <command> <subcommand> [<subcommand> ...] [parameters]
+To see help text, you can run:
+
+  aws help
+  aws <command> help
+  aws <command> <subcommand> help
+
+aws: error: argument --role: expected one argument
+
+{
+    "FunctionName": "AppLambdaFunction",
+    "FunctionArn": "arn:aws:lambda:us-east-1:834439401657:function:AppLambdaFunction",
+    "Runtime": "nodejs20.x",
+    "Role": "arn:aws:iam::834439401657:role/cloudformation-infra-bishnu-LambdaExecutionRole-17y2KmnWKV8k",
+    "Handler": "index.handler",
+    "CodeSize": 2254,
+    "Description": "",
+    "Timeout": 3,
+    "MemorySize": 128,
+    "LastModified": "2024-10-20T01:48:25.000+0000",
+    "CodeSha256": "JFp9Jyt8W3AsrO5NfHLwjxVs1uuajEmvSFvChXaUZ24=",
+    "Version": "$LATEST",
+    "Environment": {
+        "Variables": {
+            "bucket_name": "cloudformation-infra-bishnu-additionalbucket-tsxyq9am9rzk",
+            "region": "us-east-1",
+            "table_name": "Users"
+        }
+    },
+    "TracingConfig": {
+        "Mode": "PassThrough"
+    },
+    "RevisionId": "3cc51574-c6f5-465b-87dc-db9f38eaec3b",
+    "State": "Active",
+    "LastUpdateStatus": "InProgress",
+    "LastUpdateStatusReason": "The function is being created.",
+    "LastUpdateStatusReasonCode": "Creating",
+    "PackageType": "Zip",
+    "Architectures": [
+        "x86_64"
+    ],
+    "EphemeralStorage": {
+        "Size": 512
+    },
+    "SnapStart": {
+        "ApplyOn": "None",
+        "OptimizationStatus": "Off"
+    },
+    "RuntimeVersionConfig": {
+        "RuntimeVersionArn": "arn:aws:lambda:us-east-1::runtime:af2737389420ddcdbcdc4db3585842c334ad2482127c15295905f54a62feefc6"
+    },
+    "LoggingConfig": {
+        "LogFormat": "Text",
+        "LogGroup": "/aws/lambda/AppLambdaFunction"
+    }
+}
+
+Error parsing parameter '--environment': Expected: ',', received: 'EOF' for input:
+Variables={bucket_name=cloudformation-infra-bishnu-reactappbucket-bpfaw39yqzzu,region=us-east-1,table_name=}
+                                                                                                            ^
+updating: index.mjs (deflated 78%)
+
+
+=========== Creating/Updating Lambda Function ===========
+
+usage: aws [options] <command> <subcommand> [<subcommand> ...] [parameters]
+To see help text, you can run:
+
+  aws help
+  aws <command> help
+  aws <command> <subcommand> help
+
+aws: error: argument --role: expected one argument
+
+{
+    "FunctionName": "AppLambdaFunction",
+    "FunctionArn": "arn:aws:lambda:us-east-1:834439401657:function:AppLambdaFunction",
+    "Runtime": "nodejs20.x",
+    "Role": "arn:aws:iam::834439401657:role/cloudformation-infra-bishnu-LambdaExecutionRole-Vz5EJhRshWB7",
+    "Handler": "index.handler",
+    "CodeSize": 2254,
+    "Description": "",
+    "Timeout": 3,
+    "MemorySize": 128,
+    "LastModified": "2024-10-20T04:03:02.000+0000",
+    "CodeSha256": "JFp9Jyt8W3AsrO5NfHLwjxVs1uuajEmvSFvChXaUZ24=",
+    "Version": "$LATEST",
+    "Environment": {
+        "Variables": {
+            "bucket_name": "cloudformation-infra-bishnu-additionalbucket-42ufyyd3ezqd",
+            "region": "us-east-1",
+            "table_name": "Users"
+        }
+    },
+    "TracingConfig": {
+        "Mode": "PassThrough"
+    },
+    "RevisionId": "98353d33-17a9-47d0-8a01-7707fb85495c",
+    "State": "Active",
+    "LastUpdateStatus": "InProgress",
+    "LastUpdateStatusReason": "The function is being created.",
+    "LastUpdateStatusReasonCode": "Creating",
+    "PackageType": "Zip",
+    "Architectures": [
+        "x86_64"
+    ],
+    "EphemeralStorage": {
+        "Size": 512
+    },
+    "SnapStart": {
+        "ApplyOn": "None",
+        "OptimizationStatus": "Off"
+    },
+    "RuntimeVersionConfig": {
+        "RuntimeVersionArn": "arn:aws:lambda:us-east-1::runtime:af2737389420ddcdbcdc4db3585842c334ad2482127c15295905f54a62feefc6"
+    },
+    "LoggingConfig": {
+        "LogFormat": "Text",
+        "LogGroup": "/aws/lambda/AppLambdaFunction"
+    }
+}
+
+Error parsing parameter '--environment': Expected: ',', received: 'EOF' for input:
+Variables={bucket_name=cloudformation-infra-bishnu-reactappbucket-qkpsse7hsprd,region=us-east-1,table_name=}
+                                                                                                            ^
