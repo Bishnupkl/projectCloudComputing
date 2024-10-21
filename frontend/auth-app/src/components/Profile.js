@@ -8,6 +8,8 @@ const Profile = () => {
     const [newImage, setNewImage] = useState(null);
     const [uploading, setUploading] = useState(false);
     const [message, setMessage] = useState('');
+    const bucket_name = process.env.REACT_APP_BUCKET_URL
+    const baseUrl = process.env.REACT_APP_BASE_API;
 
     useEffect(() => {
         const token = localStorage.getItem('authToken');
@@ -61,7 +63,7 @@ const Profile = () => {
 
         try {
             // Call the backend to update the profile image
-            const response = await axios.put(`${process.env.REACT_APP_BASE_API}/updateProfileImage`, {
+            const response = await axios.put(`${baseUrl}/updateProfileImage`, {
                 email,
                 oldImageKey,
                 newFilename: uniqueFilename,
@@ -76,7 +78,8 @@ const Profile = () => {
             });
 
             // Update local storage and state
-            const updatedImageUrl = `https://${process.env.REACT_APP_BUCKET_URL}.s3.amazonaws.com/${uniqueFilename}`;
+            const updatedImageUrl = `https://${bucket_name}.s3.amazonaws.com/${uniqueFilename}`;
+            console.log(updatedImageUrl);
             localStorage.setItem('profileImageUrl', updatedImageUrl);
             setImage(updatedImageUrl);
             setMessage('Image uploaded successfully!');

@@ -1,3 +1,0 @@
-From https://github.com/Alks080900/cloud-project-aws
- * branch            main       -> FETCH_HEAD
-Already up to date.
