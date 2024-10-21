@@ -3,6 +3,7 @@ version: 0.2
 phases:
   install:
     commands:
+      - cd frontend/auth-app
       - npm install
   build:
     commands:
@@ -10,3 +11,4 @@ phases:
 artifacts:
   files:
     - '**/*'
+  base-directory: frontend/auth-app/build #test
