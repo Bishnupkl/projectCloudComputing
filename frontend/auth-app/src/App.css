@@ -133,7 +133,7 @@ button[type="submit"]:hover:not(:disabled) {
 }
 
 .form-message {
-  color: red;
+  color: green;
   text-align: center;
   margin-top: 10px;
 }
