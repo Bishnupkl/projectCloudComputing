@@ -97,6 +97,7 @@ const Signup = () => {
 
     return (
         <form onSubmit={handleUpload} className="form-container">
+        <h2>Signup</h2> 
         <input
             type="email"
             placeholder="Enter your email"

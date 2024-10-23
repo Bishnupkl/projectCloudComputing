@@ -44,7 +44,7 @@ const Login = ({ setIsAuthenticated }) => {
 
     return (
         <form onSubmit={handleLogin} className="form-container" >
-        <h1>Login</h1> 
+        <h2>Login</h2> 
             <input
                 type="email"
                 placeholder="Email"
